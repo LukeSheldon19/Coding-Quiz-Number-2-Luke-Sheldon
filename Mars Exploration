@@ -1,0 +1,22 @@
+    public static int marsExploration(String s) {
+    // Write your code here
+        int ret = 0;
+        
+        boolean tf;
+
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if (i % 3 == 0 || i % 3 == 2) {
+                if (c != 'S') {
+                    ret++;
+                }
+            } else {
+                if (c != 'O') {
+                    ret++;
+                }
+            }
+        }
+
+        return ret;
+    }
+}
